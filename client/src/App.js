@@ -44,12 +44,12 @@ function App() {
             <Navbar />
             <Switch>
               <Route 
-                path='/' 
-                element={<SearchBooks />} 
+                exact path='/' 
+                component={SearchBooks}
               />
               <Route 
                 path='/saved' 
-                element={<SavedBooks />} 
+                component={SavedBooks}
               />
               <Route 
                 path='*'
